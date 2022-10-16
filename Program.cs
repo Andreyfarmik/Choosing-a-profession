@@ -14,3 +14,13 @@ void CheckArray(string[] array, string[] array2)
         }
     }
 }
+void PrintArray(string[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write("{0},", string.Join(" ", array[i]));
+    }
+    Console.Write("]");
+    Console.WriteLine();
+}
